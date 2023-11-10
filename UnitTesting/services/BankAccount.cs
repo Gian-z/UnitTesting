@@ -19,21 +19,7 @@ public class BankAccount
     public string CustomerName => _mCustomerName;
 
     public double Balance => _mBalance;
-
-    public void Debit(double amount)
-    {
-        if (amount > _mBalance)
-        {
-            throw new ArgumentOutOfRangeException(nameof(amount));
-        }
-
-        if (amount < 0)
-        {
-            throw new ArgumentOutOfRangeException(nameof(amount));
-        }
-
-        _mBalance -= amount;
-    }
+    
 
     public void Credit(double amount)
     {

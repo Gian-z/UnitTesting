@@ -1,5 +1,7 @@
 namespace UnitTestingTests;
 
+using FakeItEasy;
+
 public class FancyBankAccountTests
 {
     [SetUp]
