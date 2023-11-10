@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GitToolBoxProjectSettings">
+    <option name="commitMessageIssueKeyValidationOverride">
+      <BoolValueOverride>
+        <option name="enabled" value="true" />
+        <option name="value" value="true" />
+      </BoolValueOverride>
+    </option>
+    <option name="commitMessageValidationConfigOverride">
+      <CommitMessageValidationOverride>
+        <option name="enabled" value="true" />
+        <option name="value">
+          <CommitMessageValidationConfig>
+            <option name="regexConfig">
+              <RegexConfig>
+                <option name="expression" value="(fix|feat|chore)\([^)]*\):(\s+([A-Za-z]+\s+)+)\[[A-Za-z]+-[0-9]+\]" />
+                <option name="testInput" value="fix(scope): chang eds tuff [AIS-244]" />
+              </RegexConfig>
+            </option>
+          </CommitMessageValidationConfig>
+        </option>
+      </CommitMessageValidationOverride>
+    </option>
+    <option name="commitMessageValidationEnabledOverride">
+      <BoolValueOverride>
+        <option name="enabled" value="true" />
+        <option name="value" value="true" />
+      </BoolValueOverride>
+    </option>
+    <option name="completionConfigsOverride">
+      <CommitCompletionConfigListOverride>
+        <option name="enabled" value="true" />
+        <option name="values">
+          <list>
+            <CommitCompletionConfig>
+              <option name="pattern" value="\[[A-Za-z]+-[0-9]+\]" />
+              <option name="testInput" value="[JIRAPRJ-1234] branch_name" />
+              <option name="type" value="PATTERN" />
+            </CommitCompletionConfig>
+          </list>
+        </option>
+      </CommitCompletionConfigListOverride>
+    </option>
+  </component>
+</project>
