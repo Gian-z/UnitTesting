@@ -4,13 +4,11 @@ namespace UnitTestingTests;
 
 public class BankAccountTests
 {
-    [Test]
-    public void Debit_WithValidAmount_UpdatesBalance()
+    [TestCase(11.99, 4.55, 7.44)]
+    [TestCase(100, 55, 45)]
+    public void Debit_WithValidAmount_UpdatesBalance(double beginningBalance, double debitAmount, double expected)
     {
         // Arrange
-        var beginningBalance = 11.99;
-        var debitAmount = 4.55;
-        var expected = 7.44;
         var account = new BankAccount("Mr. Bryan Walton", beginningBalance);
 
         // Act
